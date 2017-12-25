@@ -23,6 +23,7 @@ class Post(models.Model):
     category=models.ForeignKey(Category)
     tags=models.ManyToManyField(Tag,blank=True)
     author=models.ForeignKey(User)
+    views=models.PositiveIntegerField(default=0)
 
     def __str__(self):
         return self.title
@@ -32,4 +33,8 @@ class Post(models.Model):
 
     class Meta:
         ordering=['-created_time']
+
+    def increase_views(self):
+        self.views+=1
+        self.save(update_fields=['views'])
 
