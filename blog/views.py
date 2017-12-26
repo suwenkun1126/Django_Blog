@@ -12,6 +12,7 @@ class IndexView(ListView):
     model=Post
     template_name='blog/index.html'
     context_object_name='post_list'
+    paginate_by=1
 
 # def detail(request,pk):
 #     post=get_object_or_404(Post,pk=pk)
