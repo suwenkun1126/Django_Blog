@@ -15,7 +15,7 @@ class IndexView(ListView):
     model=Post
     template_name='blog/index.html'
     context_object_name='post_list'
-    paginate_by=1
+    paginate_by=5
 
 # def detail(request,pk):
 #     post=get_object_or_404(Post,pk=pk)
@@ -111,5 +111,12 @@ def search(request):
     post_list=Post.objects.filter(Q(title__icontains=q)|Q(body__icontains=q))
     return render(request,'blog/index.html',{'error_msg':error_msg,
                                              'post_list':post_list})
+
+def about(request):
+    return render(request,'blog/about.html')
+
+def resume(request):
+    return render(request,'blog/resume.html')
+
 
 

@@ -3,8 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Ku &amp; We</title>
-
+    <title>Kuwe blog - Home</title>
     <style>
         span.highlighted{
             color: red;
@@ -35,7 +34,7 @@
         <div class="row">
             <div class="col-md-4 col-sm-5 col-xs-8">
                 <div class="logo">
-                    <h1><a href="{% url 'blog:index' %}"><b>Ku</b> &amp; We</a></h1>
+                    <h1><a href="{% url 'blog:index' %}"><b>Ku</b> &amp; we</a></h1>
                 </div>
             </div><!-- col-md-4 -->
             <div class="col-md-8 col-sm-7 col-xs-4">
@@ -47,10 +46,9 @@
                     </div>
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right">
-                            <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="首页">首页</a></li>
-                            <li class="cl-effect-11"><a href="full-width.html" data-hover="博客">博客</a></li>
-                            <li class="cl-effect-11"><a href="about.html" data-hover="关于">关于</a></li>
-                            <li class="cl-effect-11"><a href="contact.html" data-hover="联系">联系</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'blog:index' %}" data-hover="Home">Home</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'blog:about' %}" data-hover="About">About</a></li>
+                            <li class="cl-effect-11"><a href="{% url 'blog:resume' %}" data-hover="Resume">Resume</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -135,9 +133,6 @@
                         {% endfor %}
                     </ul>
                 </div>
-{#                <div class="rss">#}
-{#                    <a href=""><span class="ion-social-rss-outline"></span> RSS 订阅</a>#}
-{#                </div>#}
             </aside>
         </div>
     </div>
@@ -146,9 +141,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <p class="copyright">&copy 2017 - 采集自<a href="http://www.cssmoban.com/"
-                                                        target="_blank" title="模板之家">模板之家</a>
-                    - 由<a href="#" title="网页模板" target="_blank">Kuwe博客</a>修改
+                <p class="copyright">&copy 2017 - <a href="#" title="网页模板" target="_blank">Kuwe博客</a>
                 </p>
             </div>
         </div>
@@ -160,10 +153,9 @@
     <button type="button" class="overlay-close"><span class="ion-ios-close-empty"></span></button>
     <nav>
         <ul>
-            <li><a href="{% url 'blog:index' %}">首页</a></li>
-            <li><a href="full-width.html">博客</a></li>
-            <li><a href="about.html">关于</a></li>
-            <li><a href="contact.html">联系</a></li>
+            <li><a href="{% url 'blog:index' %}">Home</a></li>
+            <li><a href="{% url 'blog:about' %}">About</a></li>
+            <li><a href="{% url 'blog:resume' %}">Resume</a></li>
         </ul>
     </nav>
 </div>

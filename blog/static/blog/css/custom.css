@@ -661,6 +661,10 @@ img {
     color: #fff;
 }
 
+.github a{
+    padding: 12px 12px;
+}
+
 .facebook a {
     padding: 12px 21px;
 }

@@ -1,0 +1,171 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/html">
+<head>
+<title>Kuwe blog - Resume</title>
+
+<meta name="viewport" content="width=device-width"/>
+<meta charset="UTF-8"> 
+
+<link type="text/css" rel="stylesheet" href="{% static 'blog/css/resume.css' %}">
+<link href='http://fonts.googleapis.com/css?family=Rokkitt:400,700|Lato:400,300' rel='stylesheet' type='text/css'>
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body id="top">
+<div id="cv" class="instaFade">
+	<div class="mainDetails">
+		<div id="headshot" class="quickFade">
+			<img src="{% static 'blog/img/image.jpg' %}" alt="Kuwe" />
+		</div>
+		
+		<div id="name">
+			<h1 class="quickFade delayTwo">Ku&we</h1>
+			<h3 class="quickFade delayThree">Python爬虫/开发/后端</h3>
+		</div>
+		
+		<div id="contactDetails" class="quickFade delayFour">
+			<ul>
+				<li>手机:152********</li>
+				<li>邮箱:suwenkun1126@gmail.com</li>
+				<li>Github:https://github.com/suwenkun1126</li>
+				<li>CSDN博客: http://blog.csdn.net/suwenkun1126</li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="mainArea" class="quickFade delayFive">
+		<section>
+			<article>
+				<div class="sectionTitle">
+					<h1>个人情况</h1>
+				</div>
+				<div class="sectionContent">
+					<p>姓名:Kuwe 年龄:26 所在地:福建泉州</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+        <section>
+			<article>
+				<div class="sectionTitle">
+					<h1>教育背景</h1>
+				</div>
+				<div class="sectionContent">
+					<p>xx大学 xxxx工程 本科</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+        <section>
+			<article>
+				<div class="sectionTitle">
+					<h1>获奖证书</h1>
+				</div>
+				<div class="sectionContent">
+					<p>2010—2011年获学校二等奖学金</p>
+					<p>2011—2012年获学校三等奖学金</p>
+					<p>2012—2013年获学校三等奖学金</p>
+					<p>2010—2011年获xx大学校园心理短剧二等奖</p>
+					<p>2011—2012年获xx大学优秀学生</p>
+					<p>2012—2013年获xx市慈善会优秀志愿者称号</p>
+                    <p>2012—2013年获xx大学自行车慢骑大赛第四名</p>
+                    <p>2010—2011年获xx大学暑期社会实践三等奖</p>
+                    <p>2011—2012年获xx大学党校结业证书</p>
+                    <p>大学英语四级证书</p>
+                    <p>大学英语六级证书</p>
+                    <p>2014-2015年xx公司创新项目二等奖</p>
+                    <p>2015-2016年xx公司创新项目四等奖</p>
+				</div>
+			</article>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>实践经验</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+					<h3>基于Django的个人博客系统开发,用于建立博客</h3>
+					<br>
+					<p>项目地址:<a href="https://github.com/suwenkun1126/Django_Blog" target="_blank">Django_Blog</a></p>
+				</article>
+				<article>
+					<h3>基于Flask的个人博客系统开发,用于建立博客</h3>
+					<br>
+					<p>项目地址:<a href="https://github.com/suwenkun1126/Flask_Blog" target="_blank">Flask_Blog</a></p>
+				</article>
+				<article>
+					<h3>基于Scrapy框架的爬虫,用于爬取相关网站</h3>
+					<br>
+					<p>
+                        项目地址:
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-guoke" target="_blank">果壳网</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-shixiseng" target="_blank">实习僧网</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-zhihuuser" target="_blank">知乎用户</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-weiyiwang" target="_blank">唯一图库</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-jingdongshouji" target="_blank">京东手机</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-lagouwang" target="_blank">拉勾网</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-taobaonvlang" target="_blank">淘宝女郎</a>、
+                        <a href="https://github.com/suwenkun1126/spider-scrapy-pixabay" target="_blank">pixabay网</a>
+                        <br>其他相关:
+                        <a href="https://github.com/suwenkun1126/spider-taobao" target="_blank">淘宝商品</a>、
+                        <a href="https://github.com/suwenkun1126/spider-jinritoutiao" target="_blank">今日头条</a>、
+                        <a href="https://github.com/suwenkun1126/spider-baomihuashipin" target="_blank">爆米花视频</a>、
+                        <a href="https://github.com/suwenkun1126/spider-tengxunduanshipin" target="_blank">腾讯短视频</a>、
+                        <a href="https://github.com/suwenkun1126/spider-pexels" target="_blank">pexels网</a>
+                    </p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>技能清单</h1>
+			</div>
+			<div class="sectionContent">
+				<div>
+					<p>编程语言：熟悉Python,了解Js/HTML/CSS</p>
+					<p>数据库相关：MySQL/MongoDB/Redis</p>
+					<p>Python Web框架：Django/Flask</p>
+					<p>前端框架：Bootstrap</p>
+					<p>版本控制、文档工具：Git/Github、Markdown</p>
+				</div>
+			</div>
+			<div class="clear"></div>
+		</section>
+
+		<section>
+			<div class="sectionTitle">
+				<h1>工具其他</h1>
+			</div>
+			<div class="sectionContent">
+				<article>
+{#					<p class="subDetails">Qualification</p>#}
+					<p>了解HTTP相关常见知识</p>
+					<p>熟练使用Fiddler进行抓包</p>
+					<p>熟练使用xshell连接Linux服务器进行相关部署</p>
+				</article>
+			</div>
+			<div class="clear"></div>
+		</section>
+	</div>
+</div>
+<script type="text/javascript">
+    var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+    document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+    var pageTracker = _gat._getTracker("UA-3753241-1");
+    pageTracker._initData();
+    pageTracker._trackPageview();
+</script>
+</body>
+</html>
